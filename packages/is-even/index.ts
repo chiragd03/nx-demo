@@ -1,4 +1,4 @@
 export const isEven = (x: number) => {
-    x % 2 === 0;
     console.log('New Comment')
+    return x % 2 === 0;
 }
