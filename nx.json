@@ -2,7 +2,7 @@
   "extends": "nx/presets/npm.json",
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "affected": {
-    "defaultBase": "master"
+    "defaultBase": "main"
   },
   "tasksRunnerOptions": {
     "default": {
@@ -16,6 +16,11 @@
         ],
         "accessToken": "ZGI3ZjJlNjktZTUzZS00OGFmLTk0MDItYzI2OWMyODBkYWVmfHJlYWQtd3JpdGU="
       }
+    }
+  },
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build"]
     }
   }
 }

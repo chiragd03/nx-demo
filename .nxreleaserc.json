@@ -1,0 +1,9 @@
+{
+  "changelog": true,
+  "npm": true,
+  "github": true,
+  "repositoryUrl": "https://github.com/chiragd03/nx-demo",
+  "branches": [
+    "main"
+  ]
+}

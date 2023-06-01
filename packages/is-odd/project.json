@@ -1,0 +1,15 @@
+{
+  "name": "is-odd",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "targets": {
+    "semantic-release": {
+      "executor": "@theunderscorer/nx-semantic-release:semantic-release",
+      "options": {
+        "github": true,
+        "changelog": true,
+        "npm": false,
+        "tagFormat": "is-odd-v${VERSION}"
+      }
+    }
+  }
+}
