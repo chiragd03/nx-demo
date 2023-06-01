@@ -18,12 +18,12 @@ jobs:
           git config user.name "${GITHUB_ACTOR}"
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
 
-      - run: git fetch --no-tags --prune --depth=5 origin main
+      - run: git fetch origin main
       
       - run: npm install
       
       - run: npm ci
       
-      - run: npx nx affected --target=semantic-release
+      - run: npx nx affected --target=semantic-release --base=remotes/origin/main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
