@@ -19,7 +19,7 @@ jobs:
       - run: npm install
       
       - run: npm ci
-
-      - run: npx nx run my-app:semantic-release
+      
+      - run: npx nx affected --target=semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
