@@ -18,7 +18,7 @@ jobs:
           git config user.name "${GITHUB_ACTOR}"
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
 
-      - run: git fetch --no-tags --prune --depth=5 origin master
+      - run: git fetch --no-tags --prune --depth=5 origin main
       
       - run: npm install
       
