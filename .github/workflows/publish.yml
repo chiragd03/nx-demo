@@ -22,6 +22,9 @@ jobs:
       
       - run: npm install
       
-      - run: npx nx affected --target=semantic-release --base=origin/main
+      - run: npx nx affected --target=build --base=origin/main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NX_BRANCH: ${{ github.base_ref }}
+          NX_BASE: ${{ github.event.pull_request.base.sha }}
+          NX_HEAD: ${{ github.event.pull_request.head.sha }}
