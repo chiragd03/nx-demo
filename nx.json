@@ -3,9 +3,6 @@
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "affected": {
     "defaultBase": "main"
-  },"implicitDependencies": {
-    "package.json": ["*"],
-    "nx.json": ["*"]
   },
   "tasksRunnerOptions": {
     "default": {
