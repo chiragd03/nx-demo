@@ -1,3 +1,16 @@
+# [1.1.0](https://github.com/chiragd03/nx-demo/compare/is-odd-v1.0.0...is-odd-v1.1.0) (2023-06-02)
+
+
+### Bug Fixes
+
+* added return to iseven ([9ebcc5f](https://github.com/chiragd03/nx-demo/commit/9ebcc5fcaafd277097a5469fbadc6d430237ddfb))
+* synced package-lock json file ([eda0e57](https://github.com/chiragd03/nx-demo/commit/eda0e57d08b58f2077133939fbe43882b26b944f))
+
+
+### Features
+
+* added comment to is-even ([cb67704](https://github.com/chiragd03/nx-demo/commit/cb6770461f6e93f88930692c45aa05679ec2e0cd))
+
 # 1.0.0 (2023-06-01)
 
 
